@@ -1,15 +1,19 @@
 {
   "name": "@biotope/cli",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "bin": {
-    "biotope": "./index.js"
+    "biotope": "./lib/index.js"
+  },
+  "scripts": {
+    "build": "tsc"
   },
   "dependencies": {
     "@biotope/generator": "^1.0.0",
-    "chalk": "^2.4.1",
-    "commander": "^2.15.1",
-    "node-plop": "^0.13.0"
+    "commander": "^2.15.1"
+  },
+  "devDependencies": {
+    "@types/node": "^10.9.4",
+    "typescript": "^3.0.3"
   }
 }
