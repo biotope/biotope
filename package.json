@@ -9,7 +9,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@biotope/generator": "^1.0.0",
+    "@biotope/generator": "^2.1.0",
     "commander": "^2.15.1"
   },
   "devDependencies": {
