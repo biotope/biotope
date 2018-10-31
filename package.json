@@ -6,7 +6,10 @@
     "biotope": "./lib/index.js"
   },
   "scripts": {
-    "build": "tsc"
+    "release": "np",
+    "build": "tsc",
+    "prepublishOnly": "npm run clean && npm install && npm run clean && yarn install",
+    "clean": "node_modules/.bin/rimraf node_modules",
   },
   "dependencies": {
     "@biotope/generator": "^2.1.0",
@@ -14,6 +17,7 @@
   },
   "devDependencies": {
     "@types/node": "^10.9.4",
+    "np": "^3.0.4",
     "typescript": "^3.0.3"
   }
 }
