@@ -6,14 +6,22 @@
     "biotope": "./lib/index.js"
   },
   "scripts": {
-    "build": "tsc"
+    "release": "np",
+    "build": "tsc",
+    "prepublishOnly": "npm run clean && npm install && npm run clean && yarn install",
+    "clean": "node_modules/.bin/rimraf node_modules"
   },
   "dependencies": {
-    "@biotope/generator": "^2.1.0",
+    "@biotope/generator": "^2.5.0",
     "commander": "^2.15.1"
   },
   "devDependencies": {
     "@types/node": "^10.9.4",
+    "np": "^3.0.4",
     "typescript": "^3.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/biotope/biotope-cli.git"
   }
 }
