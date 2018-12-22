@@ -3,16 +3,19 @@ import * as rimraf from 'rimraf';
 import * as npm from 'npm';
 import chalk from 'chalk';
 
+const defaultProjectName = 'biotope-boilerplate';
 export const registerInit = commander => commander
-    .command('init')
-    .action(() => {
+    .command('init [args...]')
+    .action((args = []) => {
+        const name = args[0] || defaultProjectName;
         console.log(chalk.green('========================================'));
         console.log(chalk.green('======== Pulling repository 🏎️ ========='));
         console.log(chalk.green('========================================'));
         gitClone(
             'https://github.com/biotope/biotope-boilerplate.git',
-            './',
+            name,
             () => {
+                process.chdir(name);
                 rimraf('./.git', () => {
                     console.log(chalk.green('========================================'));
                     console.log(chalk.green('====== Installing dependencies 💻 ======'));
