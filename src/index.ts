@@ -6,5 +6,5 @@ const pjson = require('../package.json');
 Object.keys(actions).forEach(key => actions[key](commander));
 
 commander
-    .version(pjson.version)
+    .version(pjson.version, '-v, --version')
     .parse(process.argv);

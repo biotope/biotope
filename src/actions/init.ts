@@ -5,9 +5,8 @@ import chalk from 'chalk';
 
 const defaultProjectName = 'biotope-boilerplate';
 export const registerInit = commander => commander
-    .command('init [args...]')
-    .action((args = []) => {
-        const name = args[0] || defaultProjectName;
+    .command('init [name]')
+    .action((name = defaultProjectName) => {
         console.log(chalk.green('========================================'));
         console.log(chalk.green('======== Pulling repository 🏎️ ========='));
         console.log(chalk.green('========================================'));
