@@ -6,6 +6,7 @@
     "biotope": "./lib/index.js"
   },
   "scripts": {
+    "release": "np",
     "start": "tsc --watch",
     "prepare": "npm run build",
     "build": "tsc"
@@ -19,6 +20,11 @@
   },
   "devDependencies": {
     "@types/node": "^10.9.4",
+    "np": "^3.0.4",
     "typescript": "^3.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/biotope/biotope-cli.git"
   }
 }
