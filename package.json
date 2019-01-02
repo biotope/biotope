@@ -7,13 +7,16 @@
   },
   "scripts": {
     "release": "np",
-    "build": "tsc",
-    "prepublishOnly": "npm run clean && npm install && npm run clean && yarn install",
-    "clean": "node_modules/.bin/rimraf node_modules"
+    "start": "tsc --watch",
+    "prepare": "npm run build",
+    "build": "tsc"
   },
   "dependencies": {
-    "@biotope/generator": "^2.5.0",
-    "commander": "^2.15.1"
+    "@biotope/generator": "^2.6.0",
+    "commander": "^2.15.1",
+    "git-clone": "^0.1.0",
+    "npm": "^6.4.1",
+    "rimraf": "^2.6.2"
   },
   "devDependencies": {
     "@types/node": "^10.9.4",
