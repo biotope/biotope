@@ -25,7 +25,7 @@ const npmInstall = async () => {
     console.log(chalk.green('========================================'));
     console.log(chalk.green('====== Installing dependencies 💻 ======'));
     console.log(chalk.green('========================================'));
-    await npm.load();
+    await new Promise((res, rej) => npm.load(res));
     npm.on('log', (message) => {
         console.log(message);
     });
