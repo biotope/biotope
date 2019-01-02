@@ -6,7 +6,7 @@
     "biotope": "./lib/index.js"
   },
   "scripts": {
-    "release": "np",
+    "release": "np --no-yarn",
     "start": "tsc --watch",
     "prepare": "npm run build",
     "build": "tsc"
