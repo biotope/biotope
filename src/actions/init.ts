@@ -9,10 +9,11 @@ const pullRepositoryTo = async (name = defaultProjectName) => {
     console.log(chalk.green('========================================'));
     console.log(chalk.green('======== Pulling repository 🏎️ ========='));
     console.log(chalk.green('========================================'));
-    return gitClone(
+    return new Promise((res, rej) => gitClone(
         'https://github.com/biotope/biotope-boilerplate.git',
-        name
-    );
+        name,
+        res
+    ));
 }
 
 const cleanup = (name) => {
