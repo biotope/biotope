@@ -29,7 +29,7 @@ const npmInstall = async () => {
     npm.on('log', (message) => {
         console.log(message);
     });
-    return npm.commands.install();
+    return new Promise((res, rej) => npm.commands.install(res));
 }
 
 const notifySuccess = () => {
