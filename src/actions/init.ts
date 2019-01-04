@@ -7,7 +7,7 @@ const defaultProjectName = 'biotope-boilerplate';
 
 const pullRepositoryTo = async (name = defaultProjectName) => {
     console.log(chalk.green('========================================'));
-    console.log(chalk.green('======== Pulling repository 🏎️ ========='));
+    console.log(chalk.green('======== Pulling repository 🏎️  ========='));
     console.log(chalk.green('========================================'));
     return new Promise((res, rej) => gitClone(
         'https://github.com/biotope/biotope-boilerplate.git',
@@ -23,7 +23,7 @@ const cleanup = (name) => {
 
 const npmInstall = async () => {
     console.log(chalk.green('========================================'));
-    console.log(chalk.green('====== Installing dependencies 💻 ======'));
+    console.log(chalk.green('====== Installing dependencies 💻  ======'));
     console.log(chalk.green('========================================'));
     await new Promise((res, rej) => npm.load(res));
     npm.on('log', (message) => {
@@ -34,7 +34,7 @@ const npmInstall = async () => {
 
 const notifySuccess = () => {
     console.log(chalk.green('========================================'));
-    console.log(chalk.green('====== Everything ready to go 👍 ======='));
+    console.log(chalk.green('====== Everything ready to go 👍  ======='));
     console.log(chalk.green('========================================'));
 }
 
