@@ -8,7 +8,7 @@
   "scripts": {
     "release": "np --no-yarn",
     "start": "tsc --watch",
-    "prepare": "npm run build",
+    "prePublish": "npm run build",
     "build": "tsc"
   },
   "dependencies": {
