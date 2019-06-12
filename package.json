@@ -1,6 +1,6 @@
 {
   "name": "@biotope/cli",
-  "version": "1.1.5",
+  "version": "1.1.4",
   "license": "MIT",
   "bin": {
     "biotope": "./lib/index.js"
@@ -13,13 +13,16 @@
   },
   "dependencies": {
     "@biotope/generator": "^2.6.0",
+    "boxen": "^2.1.0",
     "commander": "^2.15.1",
     "git-clone": "^0.1.0",
+    "node-fetch": "^2.3.0",
     "npm": "^6.4.1",
     "rimraf": "^2.6.2"
   },
   "devDependencies": {
-    "@types/node": "^10.9.4",
+    "@types/npm": "^2.0.29",
+    "center-align": "^1.0.1",
     "np": "^3.0.4",
     "typescript": "^3.0.3"
   },
