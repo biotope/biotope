@@ -12,7 +12,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@biotope/generator": "^2.6.0",
+    "@biotope/generator": "^2.7.0",
     "commander": "^2.20.0",
     "git-clone": "^0.1.0",
     "npm": "^6.9.0",
