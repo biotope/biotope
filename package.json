@@ -15,7 +15,7 @@
     "@biotope/generator": "2.7.0",
     "commander": "2.20.0",
     "git-clone": "0.1.0",
-    "npm": "6.9.0",
+    "npm": "6.9.2",
     "rimraf": "2.6.3"
   },
   "devDependencies": {
