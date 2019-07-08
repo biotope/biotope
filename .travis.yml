@@ -7,6 +7,7 @@ jobs:
     - stage: "Build"
       script: npm run build
     - stage: "Deploy"
-      - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
-      - npm run release
-      if: branch = master AND tag IS blank
+      if: branch = master AND tag IS present
+      script:
+        - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+        - npm run release
