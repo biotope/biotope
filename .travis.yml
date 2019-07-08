@@ -1,11 +1,12 @@
 language: node_js
 node_js:
   - "10"
-  - "12"
 install: npm install
-script: npm run build
-deploy:
-  provider: script
-  script: npm run release -- TRAVIS_TAG
-  on:
-    tags: true
+jobs:
+  include:
+    - stage: "Build"
+      script: npm run build
+    - stage: "Deploy"
+      script: npm run release -- $TRAVIS_TAG --ci
+      on:
+        tags: true

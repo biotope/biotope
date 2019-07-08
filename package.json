@@ -6,7 +6,7 @@
     "biotope": "./lib/index.js"
   },
   "scripts": {
-    "release": "np --no-yarn",
+    "release": "release-it",
     "start": "tsc --watch",
     "prepare": "npm run build",
     "build": "tsc"
@@ -24,7 +24,7 @@
   "devDependencies": {
     "@types/node": "12.0.10",
     "@types/npm": "2.0.29",
-    "np": "5.0.3",
+    "release-it": "^12.3.2",
     "typescript": "3.5.2"
   },
   "repository": {
