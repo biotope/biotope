@@ -1,0 +1,6 @@
+deploy:
+  provider: npm
+  email: marcwissler@gmail.com
+  api_key: NPM_TOKEN
+  on:
+    tags: true
