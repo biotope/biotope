@@ -6,7 +6,7 @@ The goal of this CLI Tool is to make it easy to build components with biotope.
 ```
 npx @biotope/cli create
 ```
-This command will creare a new biotope-boilerplate instance from https://github.com/biotope/biotope-boilerplate
+This command will create a new biotope-boilerplate instance from https://github.com/biotope/biotope-boilerplate
 
 ### Generate
 ```
