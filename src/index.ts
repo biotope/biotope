@@ -1,10 +1,17 @@
 #!/usr/bin/env node
 import * as commander from 'commander';
 import * as actions from './actions';
+import checkForNewVersion from './checkForNewVersion';
 const pjson = require('../package.json');
 
-Object.keys(actions).forEach(key => actions[key](commander));
+const run = async () => {
+    await checkForNewVersion();
 
-commander
-    .version(pjson.version, '-v, --version')
-    .parse(process.argv);
+    Object.keys(actions).forEach(key => actions[key](commander));
+
+    commander
+        .version(pjson.version, '-v, --version')
+        .parse(process.argv);
+}
+
+run();
