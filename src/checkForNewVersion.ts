@@ -1,10 +1,9 @@
 import * as boxen from 'boxen';
-import * as center from 'center-align';
 import fetch from 'node-fetch';
 
 const getVersionFromPackageInfo = packageInfo => packageInfo['dist-tags'].latest;
 const getRemoteVersion = async () => {
-	const packageInfo = await fetch('https://registry.npmjs.org/@biotope/cli').then(r => r.json());
+	const packageInfo = await fetch('https://registry.npmjs.org/biotope').then(r => r.json());
 	return getVersionFromPackageInfo(packageInfo);
 };
 
@@ -19,7 +18,7 @@ const checkForNewVersion = async () => {
 
 	if (currentVersion != remoteVersion) {
 		console.log(boxen(
-			`There is a new version of @biotope/cli. ${currentVersion} -> ${remoteVersion} run 'npm install @biotope/cli -g' to update`,
+			`There is a new version of biotope. ${currentVersion} -> ${remoteVersion} run 'npm install biotope -g' to update`,
 			{
 				padding: 1,
 				borderColor: 'red'
