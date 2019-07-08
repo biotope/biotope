@@ -4,9 +4,9 @@ The goal of this CLI Tool is to make it easy to build components with biotope.
 ## Usage
 ### Init
 ```
-npx @biotope/cli init
+npx @biotope/cli create
 ```
-This command will initialize a new biotope-boilerplate instance from https://github.com/biotope/biotope-boilerplate
+This command will create a new biotope-boilerplate instance from https://github.com/biotope/biotope-boilerplate
 
 ### Generate
 ```

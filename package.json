@@ -16,6 +16,7 @@
     "boxen": "2.1.0",
     "commander": "2.20.0",
     "git-clone": "0.1.0",
+    "inquirer": "6.4.1",
     "node-fetch": "2.3.0",
     "npm": "6.10.0",
     "rimraf": "2.6.3"
