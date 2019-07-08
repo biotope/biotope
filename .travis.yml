@@ -7,7 +7,7 @@ jobs:
     - stage: "Build"
       script: npm run build
     - stage: "Deploy"
-      if: branch = master AND tag IS present
+      if: tag IS present
       script:
         - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
         - npm run release -- $TRAVIS_TAG --ci
