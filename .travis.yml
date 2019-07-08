@@ -7,6 +7,6 @@ jobs:
     - stage: "Build"
       script: npm run build
     - stage: "Deploy"
-      script: npm run release -- $TRAVIS_TAG --ci
-      on:
-        tags: true
+      - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+      - npm run release
+      if: branch = master AND tag IS blank

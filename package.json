@@ -8,7 +8,6 @@
   "scripts": {
     "release": "release-it",
     "start": "tsc --watch",
-    "prepare": "npm run build",
     "build": "tsc"
   },
   "dependencies": {
@@ -30,5 +29,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/biotope/biotope-cli.git"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
