@@ -10,4 +10,4 @@ jobs:
       if: branch = master AND tag IS present
       script:
         - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
-        - npm run release
+        - npm run release -- $TRAVIS_TAG --ci
