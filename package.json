@@ -7,6 +7,7 @@
   },
   "scripts": {
     "release": "np --no-yarn",
+    "prepare": "npm run build",
     "start": "tsc --watch",
     "build": "tsc"
   },
