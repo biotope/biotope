@@ -6,7 +6,8 @@ setup_git() {
 }
 
 commit_package_json() {
-  git checkout master
+  git fetch origin
+  git checkout origin/master
   git add package.json
   git commit --message "Travis release: $TRAVIS_TAG"
 }
