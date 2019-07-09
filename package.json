@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/biotope/biotope-cli.git"
+    "url": "https://github.com/biotope/biotope.git"
   },
   "publishConfig": {
     "access": "public"

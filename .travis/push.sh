@@ -13,7 +13,7 @@ commit_package_json() {
 
 upload_files() {
   git remote set-url origin https://${GH_TOKEN}@github.com/biotope/biotope.git
-  git push --quiet --set-upstream origin master
+  git push --set-upstream origin master
 }
 
 setup_git
