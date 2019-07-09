@@ -11,3 +11,5 @@ jobs:
       script:
         - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
         - npm run release -- $TRAVIS_TAG
+      after_success:
+        - .travis/push.sh

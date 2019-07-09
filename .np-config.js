@@ -1,3 +1,4 @@
 module.exports = {
-	yarn: false
+	yarn: false,
+  publish: false
 };
