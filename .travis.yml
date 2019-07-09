@@ -9,6 +9,7 @@ jobs:
     - stage: "Deploy"
       if: tag IS present
       script:
+        - git checkout -b release-$TRAVIS_TAG
         - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
         - npm run release -- $TRAVIS_TAG
       after_success:
