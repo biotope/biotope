@@ -6,7 +6,7 @@
     "biotope": "./lib/index.js"
   },
   "scripts": {
-    "release": "release-it",
+    "release": "np --no-yarn",
     "start": "tsc --watch",
     "build": "tsc"
   },
@@ -17,13 +17,13 @@
     "git-clone": "0.1.0",
     "inquirer": "6.4.1",
     "node-fetch": "2.3.0",
+    "np": "^5.0.3",
     "npm": "6.10.0",
     "rimraf": "2.6.3"
   },
   "devDependencies": {
     "@types/node": "12.0.10",
     "@types/npm": "2.0.29",
-    "release-it": "^12.3.2",
     "typescript": "3.5.2"
   },
   "repository": {
