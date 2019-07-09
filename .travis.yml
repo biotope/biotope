@@ -9,6 +9,5 @@ jobs:
     - stage: "Deploy"
       if: tag IS present
       script:
-        - git symbolic-ref HEAD refs/heads/master
         - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
         - npm run release -- $TRAVIS_TAG
