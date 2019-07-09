@@ -1,4 +1,5 @@
 module.exports = {
 	yarn: false,
-  publish: false
+  publish: false,
+  anyBranch: true
 };
