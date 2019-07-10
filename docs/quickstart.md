@@ -1,17 +1,13 @@
-# Biotope
-![shield build](https://img.shields.io/travis/biotope/biotope.svg?label=build)
-![shield npm](https://img.shields.io/npm/v/biotope.svg)
-
-## Quick Start
-### Installation
-First and foremost, you need to install biotope either as global package:
+# Quick Start
+## Installation
+First and foremost, you need to install biotope as global package:
 ```bash
 npm i biotope -g
 ```
 
 After that you can use the biotope commandline tool to start a new biotope project.
 
-### Setup your first project
+## Setup your first project
 Setting up your first biotope instance, you should just trust the cli tool to setup your project. Just run:
 ```
 biotope create [project-name]
@@ -23,7 +19,7 @@ cd [project-name]
 npm start
 ```
 
-### Developing your first component
+## Developing your first component
 After starting your project, if you've chosen the empty instance, you should see an empty overview page.  
 Now to add your first component, just run
 ```
