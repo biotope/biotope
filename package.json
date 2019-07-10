@@ -10,7 +10,8 @@
     "prepare": "npm run build",
     "start": "tsc --watch",
     "build": "tsc",
-    "test": "mocha integration/integration.spec.js"
+    "test": "mocha integration/integration.spec.js",
+    "docs": "docsify serve ./docs"
   },
   "dependencies": {
     "@biotope/generator": "2.7.0",
@@ -31,6 +32,7 @@
     "cross-spawn": "^6.0.5",
     "mocha": "^6.1.4",
     "rimraf": "^2.6.3",
+    "docsify-cli": "^4.3.0",
     "typescript": "3.5.2"
   },
   "repository": {
