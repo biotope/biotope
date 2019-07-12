@@ -10,6 +10,7 @@
     "prepare": "npm run build",
     "start": "tsc --watch",
     "build": "tsc",
+    "labels": "github-label-sync biotope/biotope -l .github/labels.cfg.json",
     "test": "mocha integration/integration.spec.js",
     "docs": "docsify serve ./docs"
   },
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@types/node": "12.0.10",
     "@types/npm": "2.0.29",
+    "github-label-sync": "^1.3.0",
     "chai": "^4.2.0",
     "chai-fs": "^2.0.0",
     "concat-stream": "^2.0.0",

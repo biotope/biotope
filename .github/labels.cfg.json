@@ -1,0 +1,107 @@
+[
+    {
+        "name": "Type: Bug",
+        "color": "ee0701",
+        "aliases": [
+            "bug"
+        ]
+    },
+    {
+        "name": "Type: Feature",
+        "color": "a2eeef",
+        "aliases": [
+            "feature"
+        ]
+    },
+    {
+        "name": "Type: Documentation",
+        "color": "c3f799",
+        "aliases": [
+            "documentation"
+        ]
+    },
+    {
+        "name": "Type: Refactoring",
+        "color": "7057ff",
+        "aliases": [
+            "improvement"
+        ]
+    },
+    {
+        "name": "Type: Question",
+        "color": "d876e3",
+        "aliases": [
+            "discussion"
+        ]
+    },
+    {
+        "name": "Type: Maintenance",
+        "color": "0e8a16"
+    },
+    {
+        "name": "Type: Testing",
+        "color": "2e8011"
+    },
+
+
+    {
+        "name": "Priority: Critical",
+        "color": "ee0701"
+    },
+    {
+        "name": "Priority: High",
+        "color": "d93f0b"
+    },
+    {
+        "name": "Priority: Low",
+        "color": "0e8a16"
+    },
+    {
+        "name": "Priority: Medium",
+        "color": "fbca04"
+    },
+
+
+    {
+        "name": "Status: Abandoned",
+        "color": "000000"
+    },
+    {
+        "name": "Status: Blocked",
+        "color": "ee0701"
+    },
+    {
+        "name": "Status: In Progress",
+        "color": "cccccc"
+    },
+    {
+        "name": "Status: Proposal",
+        "color": "d4c5f9"
+    },
+    {
+        "name": "Status: PR Welcome",
+        "color": "c2e0c6"
+    },
+    {
+        "name": "Status: Review Needed",
+        "color": "fbca04"
+    },
+
+
+    {
+        "name": "duplicate",
+        "color": "ededed"
+    },
+    {
+        "name": "good first issue",
+        "color": "3cc448"
+    },
+    {
+        "name": "help wanted",
+        "color": "008672"
+    },
+    {
+        "name": "depfu",
+        "color": "8d20bc"
+    }
+]
