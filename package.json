@@ -10,6 +10,7 @@
     "prepare": "npm run build",
     "start": "tsc --watch",
     "build": "tsc",
+    "test": "mocha integration/integration.spec.js",
     "docs": "docsify serve ./docs"
   },
   "dependencies": {
@@ -20,12 +21,17 @@
     "inquirer": "6.4.1",
     "node-fetch": "2.3.0",
     "np": "^5.0.3",
-    "npm": "6.10.0",
-    "rimraf": "2.6.3"
+    "npm": "6.10.0"
   },
   "devDependencies": {
     "@types/node": "12.0.10",
     "@types/npm": "2.0.29",
+    "chai": "^4.2.0",
+    "chai-fs": "^2.0.0",
+    "concat-stream": "^2.0.0",
+    "cross-spawn": "^6.0.5",
+    "mocha": "^6.1.4",
+    "rimraf": "^2.6.3",
     "docsify-cli": "^4.3.0",
     "typescript": "3.5.2"
   },
