@@ -5,8 +5,12 @@ install: npm install
 jobs:
   include:
     - stage: "Build"
-      script: npm run build
+      name: "Build"
+      script: 
+        - npm run build
+        - npm run test
     - stage: "Deploy"
+      name: "Deploy"
       if: tag IS present
       script:
         - git checkout -b release-$TRAVIS_TAG
