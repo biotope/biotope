@@ -15,7 +15,7 @@
     "docs": "docsify serve ./docs"
   },
   "dependencies": {
-    "@biotope/generator": "2.7.0",
+    "@biotope/generator": "3.0.0",
     "boxen": "2.1.0",
     "commander": "2.20.0",
     "git-clone": "0.1.0",
