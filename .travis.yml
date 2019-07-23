@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "10"
+install: npm install
+jobs:
+  include:
+    - stage: "Build"
+      name: "Build"
+      script: 
+        - npm run build
+        - npm run test
+    - stage: "Deploy"
+      name: "Deploy"
+      if: tag IS present
+      script:
+        - git checkout -b release-$TRAVIS_TAG
+        - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+        - npm run release -- $TRAVIS_TAG
+      after_success:
+        - .travis/push.sh
