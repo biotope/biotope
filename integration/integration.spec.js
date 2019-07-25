@@ -104,6 +104,20 @@ describe('biotope', () => {
       expect(response).to.contain('not a valid')
     })
 
+    it('asks the user for the features of the component', async () => {
+      const response = await cli.execute(
+        [
+          'generate',
+        ],
+        [
+          'MyComponent',
+          cmd.ENTER
+        ]
+      );
+
+      expect(response).to.contain('What should your component contain?')
+    })
+
     it('asks the user for the location of the component', async () => {
       const response = await cli.execute(
         [
@@ -111,6 +125,7 @@ describe('biotope', () => {
         ],
         [
           'MyComponent',
+          cmd.ENTER,
           cmd.ENTER
         ]
       );
@@ -125,6 +140,7 @@ describe('biotope', () => {
         ],
         [
           'MyComponent',
+          cmd.ENTER,
           cmd.ENTER,
           cmd.ENTER
         ]
@@ -142,6 +158,7 @@ describe('biotope', () => {
         [
           'MyComponent',
           cmd.ENTER,
+          cmd.ENTER,
           'test-components',
           cmd.ENTER,
           cmd.ENTER
@@ -153,11 +170,12 @@ describe('biotope', () => {
         'index.ts',
         'MyComponent.ts',
         'styles.scss',
-        'template.ts'
+        'template.ts',
+        'defines.ts'
       ]);
 
       rimraf(process.cwd() + '/test-components', () => {});
-    })
+    }).timeout(3000)
 
     it('asks the user for a page layout', async () => {
       const response = await cli.execute(
@@ -166,6 +184,7 @@ describe('biotope', () => {
         ],
         [
           'MyComponent',
+          cmd.ENTER,
           cmd.ENTER,
           'test-components',
           cmd.ENTER,
@@ -185,6 +204,7 @@ describe('biotope', () => {
         [
           'MyComponent',
           cmd.ENTER,
+          cmd.ENTER,
           'test-components',
           cmd.ENTER,
           'Y',
@@ -197,12 +217,13 @@ describe('biotope', () => {
     }).timeout(3000)
 
     it('generates page templates in addition to the component', async () => {
-      const response = await cli.execute(
+      await cli.execute(
         [
           'generate',
         ],
         [
           'MyComponent',
+          cmd.ENTER,
           cmd.ENTER,
           'test-components',
           cmd.ENTER,
@@ -220,10 +241,11 @@ describe('biotope', () => {
         'MyComponent.ts',
         'styles.scss',
         'template.ts',
+        'defines.ts',
         'scaffolding'
       ]);
       expect(process.cwd() + '/test-components/MyComponent/scaffolding').to.be.a.directory().with.contents([
-        'demo.hbs',
+        'MyComponent.hbs',
       ]);
       expect(process.cwd() + '/test-pages').to.be.a.directory().with.contents([
         '10components.MyComponent.hbs'
