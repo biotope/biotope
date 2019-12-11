@@ -36,7 +36,7 @@
     "mocha": "^6.2.0",
     "rimraf": "^2.6.3",
     "docsify-cli": "^4.3.0",
-    "typescript": "3.5.3"
+    "typescript": "3.7.3"
   },
   "repository": {
     "type": "git",
