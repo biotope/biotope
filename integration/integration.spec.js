@@ -82,9 +82,19 @@ describe('biotope', () => {
     })
   })
   describe('generate', () => {
-    it('asks the user for the name of the component', async () => {
+    it('asks the user for the version of the component', async () => {
       const response = await cli.execute([
         'generate'
+      ]);
+
+      expect(response).to.contain('version')
+    })
+
+    it('asks the user for the name of the component', async () => {
+      const response = await cli.execute([
+        'generate',
+      ], [
+        cmd.ENTER
       ]);
 
       expect(response).to.contain('Component name')
@@ -93,9 +103,10 @@ describe('biotope', () => {
     it('does not allow invalid componen names', async () => {
       const response = await cli.execute(
         [
-          'generate',
+          'generate'
         ],
         [
+          cmd.ENTER,
           'mycomponent',
           cmd.ENTER
         ]
@@ -110,6 +121,7 @@ describe('biotope', () => {
           'generate',
         ],
         [
+          cmd.ENTER,
           'MyComponent',
           cmd.ENTER
         ]
@@ -124,6 +136,7 @@ describe('biotope', () => {
           'generate',
         ],
         [
+          cmd.ENTER,
           'MyComponent',
           cmd.ENTER,
           cmd.ENTER
@@ -139,6 +152,7 @@ describe('biotope', () => {
           'generate',
         ],
         [
+          cmd.ENTER,
           'MyComponent',
           cmd.ENTER,
           cmd.ENTER,
@@ -156,6 +170,7 @@ describe('biotope', () => {
           'generate',
         ],
         [
+          cmd.ENTER,
           'MyComponent',
           cmd.ENTER,
           cmd.ENTER,
@@ -183,6 +198,7 @@ describe('biotope', () => {
           'generate',
         ],
         [
+          cmd.ENTER,
           'MyComponent',
           cmd.ENTER,
           cmd.ENTER,
@@ -202,6 +218,7 @@ describe('biotope', () => {
           'generate',
         ],
         [
+          cmd.ENTER,
           'MyComponent',
           cmd.ENTER,
           cmd.ENTER,
@@ -214,7 +231,7 @@ describe('biotope', () => {
       );
 
       expect(response).to.contain('Then where to put the page?');
-    }).timeout(3000)
+    }).timeout(4000)
 
     it('generates page templates in addition to the component', async () => {
       await cli.execute(
@@ -222,6 +239,7 @@ describe('biotope', () => {
           'generate',
         ],
         [
+          cmd.ENTER,
           'MyComponent',
           cmd.ENTER,
           cmd.ENTER,
