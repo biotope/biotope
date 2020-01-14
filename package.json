@@ -6,6 +6,7 @@
     "biotope": "./lib/index.js"
   },
   "scripts": {
+    "prepublishOnly": "npm ci",
     "release": "np --no-yarn",
     "prepare": "npm run build",
     "start": "tsc --watch",
