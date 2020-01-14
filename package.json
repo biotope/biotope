@@ -6,9 +6,7 @@
     "biotope": "./lib/index.js"
   },
   "scripts": {
-    "prepublishOnly": "npm ci",
     "release": "np",
-    "prepare": "npm run build",
     "start": "tsc --watch",
     "build": "tsc",
     "labels": "github-label-sync biotope/biotope -l .github/labels.cfg.json",
