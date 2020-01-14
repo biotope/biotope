@@ -23,7 +23,7 @@
     "inquirer": "6.5.1",
     "node-fetch": "2.3.0",
     "np": "^5.2.1",
-    "npm": "6.11.2"
+    "npm": "6.13.4"
   },
   "devDependencies": {
     "@types/node": "12.7.1",
