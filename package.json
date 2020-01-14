@@ -7,7 +7,7 @@
   },
   "scripts": {
     "prepublishOnly": "npm ci",
-    "release": "np --no-yarn",
+    "release": "np",
     "prepare": "npm run build",
     "start": "tsc --watch",
     "build": "tsc",
