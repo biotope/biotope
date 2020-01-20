@@ -27,7 +27,7 @@
   "devDependencies": {
     "@types/node": "12.7.1",
     "@types/npm": "2.0.31",
-    "github-label-sync": "^1.3.0",
+    "github-label-sync": "^1.4.2",
     "chai": "^4.2.0",
     "chai-fs": "^2.0.0",
     "concat-stream": "^2.0.0",
