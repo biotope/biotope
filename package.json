@@ -33,7 +33,7 @@
     "concat-stream": "^2.0.0",
     "cross-spawn": "^6.0.5",
     "mocha": "^6.2.2",
-    "rimraf": "^2.6.3",
+    "rimraf": "^3.0.0",
     "docsify-cli": "^4.3.0",
     "typescript": "3.5.3"
   },
