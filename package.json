@@ -14,7 +14,7 @@
     "docs": "docsify serve ./docs"
   },
   "dependencies": {
-    "@biotope/generator": "^3.1.0",
+    "@biotope/generator": "^4.0.0",
     "@biotope/pwa": "^1.0.0",
     "boxen": "4.2.0",
     "commander": "2.20.0",
