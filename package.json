@@ -32,7 +32,7 @@
     "chai-fs": "^2.0.0",
     "concat-stream": "^2.0.0",
     "cross-spawn": "^6.0.5",
-    "mocha": "^6.2.2",
+    "mocha": "^7.0.1",
     "rimraf": "^2.6.3",
     "docsify-cli": "^4.3.0",
     "typescript": "3.5.3"
