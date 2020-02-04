@@ -19,7 +19,7 @@
     "boxen": "4.2.0",
     "commander": "2.20.0",
     "git-clone": "0.1.0",
-    "inquirer": "6.5.1",
+    "inquirer": "7.0.4",
     "node-fetch": "2.3.0",
     "np": "^5.2.1",
     "npm": "6.13.6"
