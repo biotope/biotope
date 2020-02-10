@@ -17,7 +17,7 @@
     "@biotope/generator": "^4.0.1",
     "@biotope/pwa": "^1.0.0",
     "boxen": "4.2.0",
-    "commander": "2.20.0",
+    "commander": "4.1.1",
     "git-clone": "0.1.0",
     "inquirer": "6.5.1",
     "node-fetch": "2.3.0",
