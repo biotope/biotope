@@ -25,7 +25,7 @@
     "npm": "6.13.7"
   },
   "devDependencies": {
-    "@types/node": "13.7.1",
+    "@types/node": "13.7.4",
     "@types/npm": "2.0.31",
     "github-label-sync": "^1.4.2",
     "chai": "^4.2.0",
@@ -35,7 +35,7 @@
     "mocha": "^7.0.1",
     "rimraf": "^3.0.2",
     "docsify-cli": "^4.4.0",
-    "typescript": "3.7.5"
+    "typescript": "3.8.2"
   },
   "repository": {
     "type": "git",
